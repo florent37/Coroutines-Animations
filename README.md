@@ -10,6 +10,8 @@ Use the power of kotlin coroutines to execute your android animations
 implementation 'com.github.florent37:coroutine-animations:(last version)'
 ```
 
+# Usage
+
 ```kotlin
 async {
     animation(avatar, startDelay = 1000L) { y = 0f }.join() //wait until animation end
