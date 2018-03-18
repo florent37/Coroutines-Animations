@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         follow.setOnClickListener { performAnimation() }
     }
 
-    fun performAnimation() = async {
+    fun performAnimation() = launch {
         animation(avatar, startDelay = 1000L) { top = 0f }.join()
 
         floatAnimation(avatar, 1f, 0.5f) { view, value ->

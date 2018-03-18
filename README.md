@@ -13,7 +13,7 @@ implementation 'com.github.florent37:coroutine-animations:(last version)'
 # Usage
 
 ```kotlin
-async {
+launch {
     animation(avatar, startDelay = 1000L) { y = 0f }.join() //wait until animation end
     
     //run these animations in parallel
