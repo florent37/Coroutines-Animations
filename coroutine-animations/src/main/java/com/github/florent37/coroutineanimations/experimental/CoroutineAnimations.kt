@@ -1,10 +1,11 @@
-package com.github.florent37.kotlinanimation
+package com.github.florent37.coroutineanimations.experimental
 
 import android.animation.*
 import android.os.Build
 import android.view.View
 import android.view.animation.Interpolator
 import android.view.animation.LinearInterpolator
+import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.launch
 import kotlin.coroutines.experimental.suspendCoroutine
 
@@ -15,7 +16,7 @@ fun floatAnimation(view: View,
                        startDelay: Long = 0,
                        evaluator: TypeEvaluator<Number> = FloatEvaluator(),
                        interpolator: Interpolator = LinearInterpolator(),
-                       valueListener: (View, Float) -> Unit) = launch {
+                       valueListener: (View, Float) -> Unit) = launch(UI) {
     suspendCoroutine<ViewAnimation> { continuation ->
         view.post {
             val viewAnimation = ViewAnimation()
@@ -47,7 +48,7 @@ fun intAnimation(view: View,
                    startDelay: Long = 0,
                    evaluator: TypeEvaluator<Int> = IntEvaluator(),
                    interpolator: Interpolator = LinearInterpolator(),
-                   valueListener: (Int) -> Unit) = launch {
+                   valueListener: (Int) -> Unit) = launch(UI) {
     suspendCoroutine<ViewAnimation> { continuation ->
         view.post {
             val viewAnimation = ViewAnimation()
@@ -77,7 +78,7 @@ fun animation(view: View,
               duration: Long = 300,
               startDelay: Long = 0,
               interpolator: Interpolator = LinearInterpolator(),
-              block: (ViewAnimation.() -> Unit)) = launch {
+              block: (ViewAnimation.() -> Unit)) = launch(UI) {
 
     suspendCoroutine<ViewAnimation> { continuation ->
         view.post {

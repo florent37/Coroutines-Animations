@@ -7,6 +7,7 @@ import com.github.florent37.kotlinanimation.animation
 import com.github.florent37.kotlinanimation.centerY
 import com.github.florent37.kotlinanimation.floatAnimation
 import kotlinx.coroutines.experimental.Job
+import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.launch
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         follow.setOnClickListener { performAnimation() }
     }
 
-    fun performAnimation() = launch {
+    fun performAnimation() = launch(UI) {
         animation(avatar, startDelay = 1000L) { top = 0f }.join()
 
         floatAnimation(avatar, 1f, 0.5f) { view, value ->
