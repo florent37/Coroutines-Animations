@@ -3,6 +3,9 @@ package florent37.github.com.kotlinanimation
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.github.florent37.coroutineanimations.experimental.animation
+import com.github.florent37.coroutineanimations.experimental.centerY
+import com.github.florent37.coroutineanimations.experimental.floatAnimation
 import com.github.florent37.kotlinanimation.animation
 import com.github.florent37.kotlinanimation.centerY
 import com.github.florent37.kotlinanimation.floatAnimation
