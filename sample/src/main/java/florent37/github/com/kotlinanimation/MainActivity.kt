@@ -8,6 +8,7 @@ import com.github.florent37.kotlinanimation.centerY
 import com.github.florent37.kotlinanimation.floatAnimation
 import kotlinx.coroutines.experimental.Job
 import kotlinx.coroutines.experimental.async
+import kotlinx.coroutines.experimental.launch
 
 class MainActivity : AppCompatActivity() {
 
