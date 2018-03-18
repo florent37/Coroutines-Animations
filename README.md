@@ -1,6 +1,11 @@
-# Coroutine Animation
+# Coroutine Animations
 
-TODO MAKE README
+Use the power of kotlin coroutines to execute your android animations
+
+[ ![Download](https://api.bintray.com/packages/florent37/maven/coroutine-animations/images/download.svg) ](https://bintray.com/florent37/maven/coroutine-animations/)
+```groovy
+implementation 'com.github.florent37:coroutine-animations:(last version)'
+```
 
 ```kotlin
 async {
@@ -66,3 +71,27 @@ val animations = mutableListOf<Job>(
 )
 animations.forEach { it.join() } // wait for all animations to complete
 ```
+
+# How to Contribute
+
+We welcome your contributions to this project. 
+
+The best way to submit a patch is to send us a [pull request](https://help.github.com/articles/about-pull-requests/). 
+
+To report a specific problem or feature request, open a new issue on Github. 
+
+# License
+
+    Copyright 2018 florent37, Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
