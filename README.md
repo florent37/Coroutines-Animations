@@ -1,5 +1,8 @@
 # Coroutine Animations
 
+[![CircleCI](https://circleci.com/gh/florent37/Coroutine-Animations/tree/master.svg?style=svg)](https://circleci.com/gh/florent37/Coroutine-Animations/tree/master)
+[![Language](https://img.shields.io/badge/language-kotlin-brightgreen.svg)](https://github.com/florent37/Coroutine-Animations)
+
 Use the power of kotlin coroutines to execute your android animations
 
 [ ![Download](https://api.bintray.com/packages/florent37/maven/coroutine-animations/images/download.svg) ](https://bintray.com/florent37/maven/coroutine-animations/)
