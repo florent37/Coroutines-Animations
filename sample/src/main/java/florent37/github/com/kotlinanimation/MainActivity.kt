@@ -36,10 +36,12 @@ class MainActivity : AppCompatActivity() {
     fun performAnimation() = launch(UI) {
         animation(avatar, startDelay = 1000L) { top = 0f }.join()
 
+        //wait until animation finished
         floatAnimation(avatar, 1f, 0.5f) { view, value ->
             view.alpha = value
         }.join()
 
+        //wait until all of these animation finished
         mutableListOf(
                 animation(follow) {
                     top = avatar.y + avatar.height + 16f
