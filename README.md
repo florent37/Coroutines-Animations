@@ -46,14 +46,14 @@ animation(view, startDelay= , duration=, interpolator=) {
 
 # Custom animation
 
-of float
+Animation of `Float` values
 ```kotlin
 floatAnimation(avatar, from=1f, to=0.5f){ view, value ->
     view.alpha = value
 }
 ```
 
-of Int
+Animation of `Int` values
 ```kotlin
 intAnimation(avatar, from=0, to=300){ view, value ->
     view.x = value
@@ -62,7 +62,7 @@ intAnimation(avatar, from=0, to=300){ view, value ->
 
 ## Chain Animations
 
-.join() will suspend the coroutine until the animation has finished
+`.join()` suspend the coroutine until the animation has finished
 
 ```kotlin
 animation(view1) { property1 = value1 }.join()
