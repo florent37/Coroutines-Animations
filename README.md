@@ -13,7 +13,7 @@ implementation 'com.github.florent37:coroutine-animations:(last version)'
 # Usage
 
 ```kotlin
-launch {
+launch(UI) {
     //fire an alpha animation without suspending coroutine
     animation(avatar) { alpha = 0.5f } 
  

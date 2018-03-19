@@ -30,10 +30,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun performAnimation() = launch(UI) {
+        animation(avatar) { alpha = 0.5f }
+
         animation(avatar, startDelay = 1000L) { top = 0f }.join()
 
         //wait until animation finished
-        floatAnimation(avatar, 1f, 0.5f) { view, value ->
+        floatAnimation(avatar, 0.5f, 1f) { view, value ->
             view.alpha = value
         }.join()
 
