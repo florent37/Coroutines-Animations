@@ -5,7 +5,7 @@
 
 Use the power of kotlin coroutines to execute your android animations
 
-[ ![Download](https://api.bintray.com/packages/florent37/maven/coroutines-animations/images/download.svg) ](https://bintray.com/florent37/maven/coroutines-animations/)
+[ ![Download](https://api.bintray.com/packages/florent37/maven/Coroutines-Animations/images/download.svg) ](https://bintray.com/florent37/maven/Coroutines-Animations/)
 ```groovy
 implementation 'com.github.florent37:coroutine-animations:(last version)'
 ```
