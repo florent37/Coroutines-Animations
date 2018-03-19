@@ -29,5 +29,5 @@ dependencies {
 
     implementation "com.github.florent37:shapeofview:+"
 
-    implementation project(':coroutine-animations')
+    implementation project(':coroutines-animations')
 }

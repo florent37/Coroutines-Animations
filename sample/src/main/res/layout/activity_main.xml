@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="florent37.github.com.kotlinanimation.MainActivity">
+    tools:context="florent37.github.com.kotlinanimation.com.github.florent37.coroutines.animations.MainActivity">
 
     <ImageView
         android:id="@+id/avatar"
