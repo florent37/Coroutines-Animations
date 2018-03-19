@@ -71,6 +71,10 @@ animation(view2) { property2 = value2 }.join()
 
 ## Animations in parallel
 
+Just use animations as usual coroutine jobs, 
+if you want to wait for multiple to finish, 
+add them into a list and call `join` on each
+
 ```kotlin
 val animations = mutableListOf<Job>(
     animation(view1) { property1 = value1 }
