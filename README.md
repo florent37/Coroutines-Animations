@@ -12,6 +12,8 @@ implementation 'com.github.florent37:coroutine-animations:(last version)'
 
 # Usage
 
+TOTO : ADD VIDEO
+
 ```kotlin
 launch(UI) {
     //fire an alpha animation without suspending coroutine
