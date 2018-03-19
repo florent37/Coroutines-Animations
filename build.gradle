@@ -31,10 +31,10 @@ ext {
     targetCompatibilityVersion = JavaVersion.VERSION_1_8
     supportVersion = "27.0.2"
 
-    github = 'https://github.com/florent37/Coroutine-Animations'
+    github = 'https://github.com/florent37/Coroutines-Animations'
 
     libraryGroup = 'com.github.florent37'
-    libraryName = 'coroutine-animations'
+    libraryName = 'coroutines-animations'
     libraryVersion = "1.0.0"
-    libraryDescription = 'Coroutine-Animations'
+    libraryDescription = 'Coroutines-Animations'
 }
