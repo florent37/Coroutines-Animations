@@ -14,8 +14,13 @@ implementation 'com.github.florent37:coroutine-animations:(last version)'
 
 ```kotlin
 launch {
-    animation(avatar, startDelay = 1000L) { y = 0f }.join() //wait until animation end
-    
+    //fire an alpha animation without suspending coroutine
+    animation(avatar) { alpha = 0.5f } 
+ 
+    //execute a translation animation
+    //use .join() to suspend the coroutine until the animation end
+    animation(avatar, startDelay = 1000L) { y = 0f }.join()
+ 
     //run these animations in parallel
     mutableListOf<Job>(
            animation(follow) {
@@ -24,19 +29,16 @@ launch {
            animation(kotlin) {
                left = avatar.x - kotlin.width - 16f
                centerY = avatar.centerY()
-           },
-           animation(coroutine) {
-               left = avatar.x + avatar.width + 16f
-               centerY = avatar.centerY()
            }
-    ).forEach { it.join() } // wait for all animations to complete
+    )
+    .forEach { it.join() } //wait until all animations have finished
 }
 ```
 
 # Simple animation
 
 ```kotlin
-animation(view, startDelay= , duration=) { 
+animation(view, startDelay= , duration=, interpolator=) { 
     property1 = value1 
     property2 = value1 
 }
