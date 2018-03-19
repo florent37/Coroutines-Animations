@@ -1,4 +1,4 @@
-# Coroutine Animations
+# Coroutines Animations
 
 [![CircleCI](https://circleci.com/gh/florent37/Coroutine-Animations/tree/master.svg?style=svg)](https://circleci.com/gh/florent37/Coroutine-Animations/tree/master)
 [![Language](https://img.shields.io/badge/language-kotlin-brightgreen.svg)](https://github.com/florent37/Coroutine-Animations)
