@@ -93,6 +93,8 @@ The best way to submit a patch is to send us a [pull request](https://help.githu
 
 To report a specific problem or feature request, open a new issue on Github. 
 
+Fiches Plateau Moto : [https://www.fiches-plateau-moto.fr/](https://www.fiches-plateau-moto.fr/)
+
 # License
 
     Copyright 2018 florent37, Inc.
