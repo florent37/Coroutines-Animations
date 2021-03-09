@@ -1,14 +1,15 @@
 package com.github.florent37.coroutines.animations
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.github.florent37.coroutineanimations.experimental.animation
 import com.github.florent37.coroutineanimations.experimental.centerY
 import com.github.florent37.coroutineanimations.experimental.floatAnimation
 import florent37.github.com.kotlinanimation.R
-import kotlinx.coroutines.experimental.android.UI
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         follow.setOnClickListener { performAnimation() }
     }
 
-    fun performAnimation() = launch(UI) {
+    fun performAnimation() = GlobalScope.launch(Dispatchers.Main) {
         animation(avatar) { alpha = 0.5f }
 
         animation(avatar, startDelay = 1000L) { top = 0f }.join()
